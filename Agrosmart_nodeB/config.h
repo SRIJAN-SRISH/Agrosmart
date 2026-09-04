@@ -35,8 +35,8 @@
 #define WIFI_SSID "srijan"
 #define WIFI_PASS "srijan1234"
 
-#define SUPABASE_URL "https://hrubrokdmvnpzejqjuqa.supabase.co/rest/v1/"
-#define SUPABASE_ANON_KEY "sb_publishable_ki003MnbTVLvNppgRrZq1A_IKZJQlc9"
+#define SUPABASE_URL ""
+#define SUPABASE_ANON_KEY ""
 
 // ==========================================
 // Hardware Safety & Watchdog

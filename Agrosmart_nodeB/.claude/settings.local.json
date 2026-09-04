@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/abhishek kumar thaku/OneDrive/Documents/Arduino/Agrosmart_NodeA\")",
+      "Bash(mkdir -p \"C:/Users/abhishek kumar thaku/OneDrive/Documents/Arduino/Agrosmart_NodeC\")",
+      "Bash(mkdir -p \"C:/Users/abhishek kumar thaku/OneDrive/Documents/Arduino/NodeB_LED_Test\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\abhishek kumar thaku\\\\OneDrive\\\\Documents\\\\Arduino\\\\NodeB_Rewire_Test\")",
+      "WebSearch"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\abhishek kumar thaku\\OneDrive\\Documents\\Arduino"
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-# AgroSmart — Precision Agriculture System 🌱
+# AgroSmart - Precision Agriculture System 🌱
 
 A closed-loop, distributed precision-agriculture system for automated soil monitoring and irrigation, built around three networked embedded nodes communicating over LoRa. AgroSmart continuously samples soil and environmental conditions, computes exact irrigation needs using field-specific agronomic physics, and drives pump/valve hardware safely and automatically — logging every decision to SD card and the cloud.
 
@@ -10,18 +10,19 @@ Originally developed as a Smart India Hackathon (SIH) 2025 submission and contin
 
 ```
 ┌────────────────────┐        LoRa 433 MHz        ┌──────────────────────────┐        LoRa 433 MHz        ┌────────────────────┐
-│   Node A            │ ─────────────────────────► │   Node B                  │ ─────────────────────────► │   Node C            │
-│   Field Telemetry   │   MasterSensorRecord       │   Gateway & Decision      │   NodeCCommand              │   Physical Actuator │
-│                      │ ◄───────────────────────── │   Engine                  │ ◄───────────────────────── │                      │
-└────────────────────┘                             └──────────────────────────┘        NodeCFeedback        └────────────────────┘
-      ESP32                                          ESP32 (dual-core, FreeRTOS)                                  ESP32
-   Soil + GPS sensing                                Agronomic physics engine                              Pump/valve control
+│   Node A           │ ─────────────────────────► │   Node B                 │ ─────────────────────────► │   Node C           │
+│   Field Telemetry  │   MasterSensorRecord       │   Gateway & Decision     │   NodeCCommand             │   Physical Actuator│
+│                    │ ◄────────────────────────  │   Engine                 │ ◄───────────────────────── │                    │
+└────────────────────┘                            └──────────────────────────┘        NodeCFeedback       └────────────────────┘
+      ESP32                                          ESP32 (dual-core, FreeRTOS)                                    ESP32
+Soil + GPS sensing                                Agronomic physics engine                                    Pump/valve control
                                                       Cloud sync + SD logging                                Flow + current sensing
                                                               │
                                                               ▼
                                                      ┌──────────────────┐
-                                                     │  NodeB Display    │
-                                                     │  (Pi Pico, ili9341)│
+                                                     │  NodeB Display   │
+                                                     │  (Pi Pico,       |
+                                                     |   ili9341)       │
                                                      └──────────────────┘
 ```
 
